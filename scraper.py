@@ -56,7 +56,7 @@ for i in l:
            m.append(k)
     with open('city'+i+'.csv', 'a') as csvFile:    #Storing the data in csv file
         writer=csv.writer(csvFile)
-          for j in si:
+        for j in si:
              writer.writerow(j)
     shuffle(si)           #calling shuffle function to shuffle the dataset
     train_set(si)         #creating training set
